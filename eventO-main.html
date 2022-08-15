@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="eventO-main.css">
+    <title>eventO-MainPage</title>
+</head>
+<body>
+    <div class="banner">
+        <header>
+        <div class="navbar">
+            <img src="eventO-logo.png" class="logo">
+            <img src="eventO (1) (1).png" class="logo-1">
+            <h3><?php echo $_POST['username'];?></h3>
+            <a href="eventO-WelcomePage.php"><button> Logout <i class="fa fa-sign-out"></i></button></a>
+            
+        </div>
+        <div class="navbar2">
+               <marquee behavior="" direction="">Welcome TO eventO &nbsp !  !&nbsp &nbsp &nbsp &nbsp Add Your 
+                   Events &nbsp &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp Manage Your Events  &nbsp  &nbsp  &nbsp
+                   &nbsp | &nbsp &nbsp &nbsp &nbsp Make Your Event Amazing And Successfull .&nbsp .&nbsp .  
+
+                </marquee>
+            
+        </div>
+    </header>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Event Management</h2>
+            <ul>
+                <li><a href="#"><i class="fa fa-dashboard"></i>&nbsp Dashboard</a></li>
+                <li><a href="venue.php"><i class="fa fa-file-text"></i>&nbsp Event Details</a></li>
+                <li><a href="eventO-events.php"><i class="fa fa-gift"></i>&nbsp Add Events</a></li>
+                <li><a href="setting.html"><i class="fa fa-cogs"></i>&nbsp Setting</a></li>
+                <li><a href="eventO-WelcomePage.php"><i class="fa fa-sign-out"></i>&nbsp Logout</a></li>
+            </ul>
+            <div class="social_media">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+       <div class="main_content">
+           <div class="info">
+               <img width="1166" height="518" src="eventO_main1.png" alt="">
+           </div>
+       </div>
+    </div>
+</body>
+</html>

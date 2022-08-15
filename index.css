@@ -1,0 +1,67 @@
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.container{
+    display: flex;
+    position: relative;
+}
+.date{
+    width: 200px;
+    background-color: rgb(255, 174, 0);
+}
+.date .date1{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.date .date2{
+    margin-left: 20px;
+}
+.col-md-5{
+    width: 500px;
+}
+.show_image{
+    width: 400px;
+    border-style: solid;
+    border-right-color:rgb(255, 174, 0) ;
+    border-top-color:rgb(255, 174, 0) ;
+    border-left-color:rgb(255, 174, 0) ;
+    border-bottom-color:rgb(255, 174, 0) ;
+    }
+.subcontent{
+width: 400px;
+border-style: solid;
+border-right-color:rgb(255, 174, 0) ;
+border-top-color:rgb(255, 174, 0) ;
+border-left-color:rgb(255, 174, 0) ;
+border-bottom-color:rgb(255, 174, 0) ;
+}
+.subcontent .cont h1 .hr1{
+    margin-bottom: 15px;
+ }
+ .subcontent .cont h1 .hr1::before{
+     content: '';
+     position: absolute;
+     z-index: 1;
+ }
+ .subcontent .cont h1 .hr1::after{
+     content: '';
+     position: absolute;
+     display: block;
+     width: 80px;
+     height: 4px;
+     background: #fdaf06;
+     z-index: 2;
+     animation: animate 10s ease-in-out 0s infinite ;
+ }
+ @keyframes animate{
+     0%{
+         transform: translate(0) scaleX(0);
+         transform-origin: left;
+     }
+     20%,100%{
+         transform: translate(1) scaleX(2);
+         transform-origin: left;
+     }
+ }

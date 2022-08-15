@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>eventO-login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="eventO-login.css">
+    </head>
+    <body>
+        
+        <section>
+            <div class="imgBx">
+                <img src="Untitled design.png" alt="eventO" srcset="">
+         </div>
+         <div class="contentBx">
+             <div class="formBx">
+                <div class="hr1"><h2>Login</h2></div>
+                 <form action="login.php" method="POST">
+                     <div class="inputBx">
+                         <span>Username</span>
+                         <input type="text" id="username" name="username" required/>
+                     </div>
+                     <div class="password">
+                        <span>Password</span>
+                        <input type="password" id="passfield" name="password" required/>
+                        <i class="fa fa-eye-slash" id="eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="remember">
+                        <label for=""><input type="checkbox">&nbsp Remember me</label>
+                    </div>
+                    <div class="inputBx">
+                         <input type="submit" value="Sign In" name="register_btn">
+                        </a>
+                    </div>
+                    <div class="inputBx">
+                       <p>Don't have an account? <a href="eventO-signup.html">Sign up</a></p>
+                    </div>
+                 </form>
+                 <hr>
+                 <div class="orDiv">&nbsp Or</div>
+                 <h3>Login with social media</h3>
+                 <ul class="sci">
+                   
+                     <li><img src="facebook.png"></li>
+                     <li><img src="twitter.png"></li>
+                     <li><img src="instagram.png"></li>
+                 </ul>
+             </div>
+         </div>
+        </section>
+        <script>
+            document.getElementById("eye").addEventListener("click",function(){
+                if(document.getElementById("passfield").type=="password"){
+                    document.getElementById("passfield").type="text";
+                    this.classList.add("fa-eye");
+                    this.classList.remove("fa-eye-slash");
+                }else{
+                    document.getElementById("passfield").type="password";
+                    this.classList.remove("fa-eye");
+                    this.classList.add("fa-eye-slash");
+                }
+            });
+        </script>
+        
+    </body>
+</html>

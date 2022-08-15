@@ -1,0 +1,74 @@
+.table{
+    height: 529px;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Dark-spots-texture-background-1920x1080-620x349.jpg);
+    background-size: 100%;
+    background-position: center;
+    
+}
+h2{
+    margin-left: 75px;
+    color: aliceblue;
+}
+.hr1::before{
+    margin-left: 100px;
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+ .hr1::after{
+     margin-left: 75px;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 4px;
+    background: #fdaf06;
+    z-index: 2;
+    transform-origin: left;
+    transform:scaleX(0);
+    animation: animate 10s ease-in-out 0s infinite ;
+}
+@keyframes animate{
+    0%{
+        transform: translate(0) scaleX(0);
+        transform-origin: left;
+    }
+    20%,100%{
+        transform: translate(0) scaleX(1);
+        transform-origin: left;
+    }
+}
+.table table{
+    border-collapse: collapse;
+    width: 90%;
+}
+.table table td{
+    text-align: center;
+    
+}
+.table table th{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.table table tr:nth-child(even){
+    background-color: #fff8d6;
+}
+.table table td,tr{
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.back button{
+    margin-top: 20px;
+    margin-left: 1230px;
+    background: rgb(255, 187, 0);
+    color: black;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.logo-1{
+    margin-left: 80px;
+}

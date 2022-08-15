@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>eventO-sign-up</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="eventO-signup.css">
+    </head>
+    <body>
+        <section>
+            <div class="imgBx">
+                <img src="Untitled design.png" alt="eventO" srcset="">
+         </div>
+         <div class="contentBx">
+             <div class="formBx">
+                <div class="hr1"><h2>Sign Up</h2></div>
+                 <form action="signup.php" method="POST" onsubmit="return validate()">
+                    <div class="inputBx">
+                        <p>Already have an account? <a href="eventO-login.html">Login</a></p>
+                     </div>
+                     <div class="inputBx">
+                         <span>Full Name</span>
+                         <input type="text" name="fullname" required>
+                     </div>
+                    <div class="inputBx">
+                        <span>Username</span>
+                        <input type="text" name="username" required>
+                    </div>
+                     <div class="password">
+                        <span>Password</span>
+                        <input type="password" placeholder="" id="passfield" name="password" required>
+                        <i class="fa fa-eye-slash" id="eye"></i>
+                    </div>
+                    <div class="password">
+                        <span>Confirm Password</span>
+                        <input type="password"  id="passfield1" name="confirm_password" onkeyup="check(this)" required>
+                        <error id="alert"></error>
+                    </div>
+                    <div class="inputBx">
+                        <span>E-mail</span>
+                        <input type="email" name="email" required>
+                    </div>
+                   
+                    <div class="inputBx">
+                        <a href="C:\Users\Admin\eventO-login.html">
+                        <input type="submit" value="Sign Up" name="register_btn">
+                         </a>
+                        </div>
+                 </form>
+                 <div><p><span class="small">By continuing, you agree to accept our 
+                    <a href="#">Privacy Policy</a> &amp; <a href="#">Terms of Services</a>.</span></p>
+                </div>
+             </div>
+         </div>
+        </section>
+        <script>
+            document.getElementById("eye").addEventListener("click",function(){
+                if(document.getElementById("passfield").type=="password"){
+                    document.getElementById("passfield").type="text";
+                    this.classList.add("fa-eye");
+                    this.classList.remove("fa-eye-slash");
+                }else{
+                    document.getElementById("passfield").type="password";
+                    this.classList.remove("fa-eye");
+                    this.classList.add("fa-eye-slash");
+                }
+            });
+           
+        </script>
+        <script type="text/javascript">
+         var password = document.getElementById('passfield');
+         var flag = 1;
+         function check(elem){
+             if(elem.value.length > 0){
+                 if(elem.value != passfield.value){
+                      document.getElementById('alert').innerText = "Password does not match";
+                      flag=0;
+                 }else{
+                    document.getElementById('alert').innerText = "";
+                    flag=1;
+                 }
+             }else{
+                    document.getElementById('alert').innerText = "Please enter confirm pasword";
+                    flag=0;
+                 }
+               
+         }
+         function validate(){
+             if(flag==1){
+                 return true;
+             }else{
+                 return false;
+             }
+         }
+        </script>
+    </body>
+</html>
